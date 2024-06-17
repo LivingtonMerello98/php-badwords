@@ -16,6 +16,7 @@
         <br>
         <label for="censure">inserisci la parola che verrà censurata:</label>
         <input type="text" name="censure" id="censure"><br><br>
+        <button type="submit" value="submit"></button>
     </form>
 
 </body>
