@@ -3,9 +3,12 @@
 
 $text = $_GET['text'];
 $censure = $_GET['censure'];
-$hideWord = '****';
+$hide_word = '***';
 
-// echo $text . '  ' . $censure;
-echo "<p> il testo inserito è <br>
-'$text' <br>
-e la parola da censurare è $censure</p>";
+$censured_word = str_replace($censure, $hide_word, $text);
+$text_length = strlen($text);
+
+
+echo "<p>Original text: '$text' <br>
+        lenght of text: '$text_length' <br>
+        Censured text: '$censured_word'</p>";
