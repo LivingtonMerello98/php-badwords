@@ -9,14 +9,18 @@
 
 <body>
 
+    <!--definiamo la pagina che verrà aperta dopo 'submit' e il metodo in questo caso GET-->
     <form action="result.php" method="GET">
         <label for="text">inserisci il testo:</label><br>
         <textarea name="text" id="text" rows="4" cols="50"></textarea>
         <br>
         <br>
         <label for="censure">inserisci la parola che verrà censurata:</label>
-        <input type="text" name="censure" id="censure"><br><br>
-        <button type="submit" value="submit"></button>
+        <input type="text" name="censure" id="censure">
+        <br>
+        <br>
+        <!-- per l invio del modulo -->
+        <button type="submit" value="submit"> invia modulo</button>
     </form>
 
 </body>
