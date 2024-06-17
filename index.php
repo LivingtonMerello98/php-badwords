@@ -1,8 +1,3 @@
-<?php
-echo "Hello world";
-$name = 'livington';
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,16 +8,16 @@ $name = 'livington';
 </head>
 
 <body>
-    <p>il mio nome è <?php echo $name ?> </p>
 
-    <form action="GET">
-        <label for="censure"> insert your word</label>
-        <input type="text" name="censure" id="censure">
+    <form action="result.php" method="GET">
+        <label for="text">inserisci il testo:</label><br>
+        <textarea name="text" id="text" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <label for="censure">inserisci la parola che verrà censurata:</label>
+        <input type="text" name="censure" id="censure"><br><br>
     </form>
 
-    <hr>
-    <label for="text"> insert yout text</label>
-    <textarea name="text" id="text"></textarea>
 </body>
 
 </html>
